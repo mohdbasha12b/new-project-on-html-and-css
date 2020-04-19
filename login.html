@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>log in form</title>
+	<link rel="stylesheet" type="text/css" href="logincs.css">
+	<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700&family=Roboto+Slab:wght@800&display=swap" rel="stylesheet">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+	<div class="hero">
+		<div id="name"> 
+		<h2>DESIGN BY MOHD BASHA</h2>
+	    </div>
+		<div class="form-box">
+			<div class="button-box">
+				<div id="btn"></div>
+				<button type="button" class="toggle-btn" onclick="login()">log In</button>
+				<button type="button" class="toggle-btn" onclick="register()"> Register</button>
+			</div>
+			<div class="social">
+				<ul>
+		     	     <li><a href="https://www.facebook.com/basha.basha.148116?ref=bookmarks" ><i class="fa fa-facebook"></i></a></li>
+		     	     <li><a href="https://www.instagram.com/mohdbasha12b/" ><i class="fa fa-instagram"></i></a></li>
+		     	     <li><a href="https://www.linkedin.com/in/mohd-basha-9a4863171/" ><i class="fa fa-linkedin"></i></a></li>
+		     	     <li><a href="https://github.com/mohdbasha12b" ><i class="fa fa-github"></i></a></li>
+		          </ul>				
+			</div>
+			<form id="login"class="input-group">
+				<input type="text" class="input-field" placeholder="User Id" required>
+				<input type="password" class="input-field" placeholder="Entre password" required>
+                <input type="checkbox" class="check-box"><span>Remember password</span>
+                <button type="submit" class="submit-btn">Log In</button>
+			</form>
+			<form id="register" class="input-group">
+				<input type="text" class="input-field" placeholder="User Id" required>
+				<input type="Email" class="input-field" placeholder="Email Id" required>
+				<input type="password" class="input-field" placeholder="Entre password" required>
+                <input type="checkbox" class="check-box"><span>I agree to terms & condition</span>
+                <button type="submit" class="submit-btn">Register</button>
+			</form>
+		</div>
+	</div>
+	<script 	>
+		var x=document.getElementById("login");
+		var y=document.getElementById("register");
+		var z=document.getElementById("btn");
+
+		function register()
+		{
+			x.style.left ="-400px";
+			y.style.left ="50px";
+			z.style.left ="110px";
+		}
+		function login()
+		{
+			x.style.left ="50px";
+			y.style.left ="450px";
+			z.style.left ="0px";
+		}
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
